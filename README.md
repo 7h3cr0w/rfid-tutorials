@@ -3,3 +3,11 @@
 - Kali version 2019.4
 -
 [CheatSheets](./CheatSheet.md)
+
+### Remove Modelmodule
+First of all remove 
+
+### Download repository
+
+### Build Toolssudo 
+'sudo apt install git build-essential libreadline5 libreadline-dev gcc-arm-none-eabi libusb-0.1-4 libusb-dev libqt4-dev ncurses-dev perl pkg-config libpcsclite-dev pcsc'
