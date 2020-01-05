@@ -46,8 +46,7 @@ modprobe -r pn533
 modprobe -r pn533_usb
 ```
 
-## NFC-TOOLS Commandline
-### Try with nfctools
+## NFC-TOOLS CMD
 First of all install the nfc-tools.
 ```bash
 sudo apt install libnfc-bin
