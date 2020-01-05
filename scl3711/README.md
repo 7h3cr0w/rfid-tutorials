@@ -1,5 +1,5 @@
 # Totuorial to use SCL3711 under Kali/Debian
-This short tutorial is to setup SCL 3711 and read or write RFID Cards with NFC-TOOL under KALI.
+This short tutorial is to setup SCL 3711 and read or write RFID Cards with NFC-TOOL under KALI/Debian. I thinke there are many ways to do this :)
 ![SDC3711](https://github.com/7h3cr0w/rfid-tutorials/blob/master/scl3711/scm3711.jpg)
 
 
