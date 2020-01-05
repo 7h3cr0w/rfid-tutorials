@@ -72,4 +72,4 @@ Easy way is to install the graphical NFC-Tool from Wak-Dev you could find it at 
 ```bash
 $ ./nfctools-latest.AppImage 
 ```
-![SDC3711](https://github.com/7h3cr0w/rfid-tutorials/blob/master/scl3711/screenshot_01.jpg)
+![Screenshot from WakDev](https://github.com/7h3cr0w/rfid-tutorials/blob/master/scl3711/Screenshot_01.png)
