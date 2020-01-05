@@ -4,8 +4,16 @@
 -
 [CheatSheets](./CheatSheet.md)
 
-### Remove Modelmodule
-First of all remove 
+### Remove ModemManager
+The ModemManager could brik your proxmark so stop the manager first or better if you do not need him remove him forever.
+
+#### Kill the ModemManager:
+`killall ModemManager`
+
+#### Remove the ModemManager:
+`apt remove ModemManger`
+
+
 
 ### Download repository
 
