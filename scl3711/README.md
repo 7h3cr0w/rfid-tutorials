@@ -67,9 +67,9 @@ ISO/IEC 14443A (106 kbps) target:
 ```
 
 ## NFC-TOOLS with GUI
-Easy way is to install the graphical NFC-Tool from Wak-Dev you could find it at [NFC-Tools](https://www.wakdev.com/apps/nfc-tools-pc-mac.html) and simple load the java app with:
+Easy way is to install the graphical NFC-Tool from [https://www.wakdev.com](wakdev) you could find it at [NFC-Tools](https://www.wakdev.com/apps/nfc-tools-pc-mac.html) and simple load the java app with:
 
 ```bash
 $ ./nfctools-latest.AppImage 
 ```
-![Screenshot from WakDev](https://github.com/7h3cr0w/rfid-tutorials/blob/master/scl3711/Screenshot_01.png)
+![Screenshot from wakdev](https://github.com/7h3cr0w/rfid-tutorials/blob/master/scl3711/Screenshot_01.png)
