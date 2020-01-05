@@ -2,7 +2,10 @@
 This short tutorial is to setup SCL 3711 and read or write RFID Cards with NFC-TOOL under KALI.
 ![SDC3711](https://github.com/7h3cr0w/rfid-tutorials/blob/master/scl3711/scm3711.jpg)
 
-## Download the Driver
+
+
+## Setup the Device
+### Download the Driver
 Install the driver from [scm-pc-card](https://scm-pc-card.de/index.php?page=download&function=show_downloads&lang=en&product_id=610)
 
 ```bash
@@ -14,8 +17,8 @@ cd sclgeneric_2.09_linux_64bit/
 ./install.sh
 ```
 
-## Find the device
-After you pluged in the device you should see the device with `dmesg`
+### Find the device
+After you pluged in the device, you should see the device with `dmesg`
 
 ```bash
 $ dmesg
@@ -31,8 +34,42 @@ $ dmesg
 [13976.232512] usbcore: registered new interface driver pn533_usb
 ```
 
-or you could see it with `lsusb`
+or you could use `lsusb`
 ```bash
 $ lsusb | grep SCM
 Bus 002 Device 024: ID 04e6:5591 SCM Microsystems, Inc. SCL3711-NFC&RW
 ```
+### Load the modules
+
+```bash
+modprobe -r pn533
+modprobe -r pn533_usb
+```
+
+## NFC-TOOLS Commandline
+### Try with nfctools
+First of all install the nfc-tools.
+```bash
+sudo apt install libnfc-bin
+```
+If you now put a card on the usb-device and type `nfc-list`, you should see something simlare like that:
+
+```bash
+$ nfc-list
+nfc-list uses libnfc 1.7.1
+NFC device: SCM Micro / SCL3711-NFC&RW opened
+1 ISO14443A passive target(s) found:
+ISO/IEC 14443A (106 kbps) target:
+    ATQA (SENS_RES): 00  04  
+       UID (NFCID1): 36  0e  cc  3c  
+      SAK (SEL_RES): 08  
+
+```
+
+## NFC-TOOLS with GUI
+Easy way is to install the graphical NFC-Tool from Wak-Dev you could find it at [NFC-Tools](https://www.wakdev.com/apps/nfc-tools-pc-mac.html) and simple load the java app with:
+
+```bash
+$ ./nfctools-latest.AppImage 
+```
+![SDC3711](https://github.com/7h3cr0w/rfid-tutorials/blob/master/scl3711/screenshot_01.jpg)
